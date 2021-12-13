@@ -1,0 +1,35 @@
+<div class="calco">
+    <label>{{input}}</label>
+    <div class="clavier">
+      <div class="col1">
+        <div class="row">
+          <input type="button" value="7" (click)="pressNum('7')">
+          <input type="button" value="8" (click)="pressNum('8')">
+          <input type="button" value="9" (click)="pressNum('9')">
+          <input type="button" class="AC" value="AC" (click)="effacerTout()">
+          <input type="button" class="DEL" value="DEL" (click)="effacer()">
+        </div>
+        <div class="row">
+          <input type="button" value="4" (click)="pressNum('4')">
+          <input type="button" value="5" (click)="pressNum('5')">
+          <input type="button" value="6" (click)="pressNum('6')">
+          <input type="button" value="+" (click)="pressOperator('+')">
+          <input type="button" value="&times;" (click)="pressOperator('*')">
+        </div>
+        <div class="row">
+          <input type="button" value="1" (click)="pressNum('1')">
+          <input type="button" value="2" (click)="pressNum('2')">
+          <input type="button" value="3" (click)="pressNum('3')">
+          <input type="button" value="-" (click)="pressOperator('-')">
+          <input type="button" value="&divide;" (click)="pressOperator('/')">
+        </div>
+        <div class="row">
+          <input type="button" value="0" (click)="pressNum('0')">
+          <input type="button" value="&dot;" (click)="pressNum('.')">
+          <input type="button" value="EXP">
+          <input type="button" value="Ans" (click)="getAns()">
+          <input type="button" value="=" (click)="getAnswer()">
+        </div>
+      </div>
+    </div>
+  </div>
